@@ -26,7 +26,6 @@ public class FileUtils {
         if (!dir.exists()) dir.mkdirs();
 
         File f = new File(filePath, picName.toString() + ".png");
-        Log.d("lizheren", "saveBitmap: " + f.getAbsolutePath());
         //文件名：根目录+/ScreenRecorder/phash.png
         if (f.exists()) {
             f.delete();
